@@ -413,31 +413,57 @@ footer {
     color: #fff;
     text-decoration: none;
 }
+/* =========================
+   MOBILE HEADER FIX
+========================= */
+
 @media (max-width: 768px) {
+
   .header {
-    padding: 14px 20px;
-  }
-
-  .header nav {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-  }
-
-  .header a {
-    margin-left: 0;
-    font-size: 14px;
+    padding: 10px 16px;
+    height: auto;
   }
 
   .logo {
     font-size: 14px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+  }
+
+  .header nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header a {
+    font-size: 13px;
+    margin-left: 0;
+    padding: 6px 8px;
+  }
+
+  .nav-btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .lang-btn {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .header.shrink {
+    padding: 6px 16px;
+    background: rgba(0,0,0,0.85);
+  }
+
+  .header.shrink .logo {
+    font-size: 13px;
   }
 }
 @media (max-width: 768px) {
   .hero {
-    padding: 40px 20px;
-    height: auto;
+    padding-top: 120px;
     min-height: 100vh;
   }
 
